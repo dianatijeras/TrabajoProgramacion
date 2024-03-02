@@ -9,10 +9,8 @@ public class Veterinaria {
     private final Collection<Mascota> listaMascotas;
 
     public Veterinaria(String nombre){
-
         assert nombre != null : "debe llenar este espacio";
 
-        
         this.nombre = nombre;
         this.listaMascotas = new LinkedList<Mascota>();
     }
