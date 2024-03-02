@@ -19,6 +19,6 @@ public Mascota {
     assert genero != null && genero.toLowerCase().contains("femenino") || genero.toLowerCase().contains("masculino");
     assert color != null && !color.isBlank() : "debe llenar este espacio";
     assert peso >= 0 : "el peso debe ser mayor o igual a 0";
-}
+    }
     
 }
