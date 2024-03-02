@@ -7,7 +7,7 @@ import java.util.LinkedList;
 public class Veterinaria {
     private final String nombre;
     private final Collection<Mascota> listaMascotas;
-,jyf,j
+    
     public Veterinaria(String nombre){
         assert nombre != null : "debe llenar este espacio";
 
