@@ -5,9 +5,8 @@
  * 
  * Licencia GNU/GPL V3.0 (https://raw.githubusercontent.com/grid-uq/poo/main/LICENSE) 
  */
-package co.edu.uniquindio.poo;
 
-//importaciones
+package co.edu.uniquindio.poo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -16,10 +15,14 @@ import java.util.logging.Logger;
 
 import org.junit.jupiter.api.Test;
 
+//importaciones
+
+
 //conjunto de pruebas unitarias escritas con el framework JUnit para la clase Mascota
 
 
 //"LOG" registra informacion de las pruebas
+
 public class MascotaTest {
     private static final Logger LOG = Logger.getLogger(MascotaTest.class.getName());
 
@@ -27,17 +30,18 @@ public class MascotaTest {
 //cada metodo de prueba incluye assertion utilizando los metodos de asercion proporcionados por JUnit, como assertEquals y assertThrows, para verificar el comportamiento esperado de la clase Mascota
 
 
-    /**
-     *Prueba que la clase Mascota almacene y recupere los datos correctamente
-     */
+/**
+*Prueba que la clase Mascota almacene y recupere los datos correctamente
+*/
 
-    @Test
+    @Test 
     public void datosCompletos(){
         System.out.println("Inicio de prueba de datos completos");
         //Almacenar los datos de prueba 1|Duna|perro|border collie|1|femenino|Cafe y blanco|12.5
         Mascota mascota = new Mascota("1","Duna","Perro","Border Collie",(byte)1,"Femenino","Cafe y Blanco",(float)12.5);
 
         //Recuperacion y verificacion de datos
+        
         assertEquals("1", mascota.id());
         assertEquals("Duna",mascota.nombre());
         assertEquals("Perro",mascota.especie());
@@ -48,7 +52,7 @@ public class MascotaTest {
         assertEquals((float)12.5,mascota.peso());
 
         System.out.println("Mascota creada con exito:\nID: " + mascota.id() + "\nNombre: " + mascota.nombre() + "\nEspecie:" + mascota.especie() + "\nRaza: " + mascota.raza() + "\nEdad: " + mascota.edad() + "\nGenero: " + mascota.genero() + "\nColor: " + mascota.color() + "\nPeso: " + mascota.peso());
-    
+
     }
 
     /*
@@ -97,7 +101,5 @@ public class MascotaTest {
 
         System.out.println("Error, falta de datos para la creacion de la Mascota");
     }
-
-
-
+    
 }
