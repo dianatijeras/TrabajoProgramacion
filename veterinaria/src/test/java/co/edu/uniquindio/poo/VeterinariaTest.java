@@ -51,6 +51,7 @@ public void agregarNuevaMascota(){
     
     }
     
+// prueba que valida que la clase veterinaria valide el ingreso de datos nulos
 @Test
 public void veterinariaNula(){
     System.out.println("Inicio de prueba de datos nulos");
@@ -61,6 +62,7 @@ public void veterinariaNula(){
     System.out.println("Error, faltan datos para la creacion de la Veterinaria");
     }
 
+//prueba que valida el ingreso de una mascota repetida
 @Test 
 public void agregarMascotaRepetida(){
     System.out.println("Inicio de prueba agregar nueva mascota");
