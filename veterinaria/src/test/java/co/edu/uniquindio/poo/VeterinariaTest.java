@@ -9,7 +9,6 @@ import java.util.logging.Logger;
 import org.junit.jupiter.api.Test;
 
 public class VeterinariaTest {
-
     private static final Logger LOG = Logger.getLogger(VeterinariaTest.class.getName());
 
 
@@ -79,5 +78,5 @@ public void agregarMascotaRepetida(){
 
     System.out.println("Error, esta mascota ya existe");
     }
-
+    
 }
